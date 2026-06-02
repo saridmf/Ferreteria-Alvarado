@@ -15,6 +15,7 @@
   <title>Ferretería Alvarado - Construye tus proyectos con la mejor base</title>
   <meta name="description" content="Compra materiales de construcción y herramientas desde la comodidad de tu casa. Rápido, variedad y al mejor precio del mercado.">
   <link rel="stylesheet" href="./Estilos/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -32,8 +33,9 @@
       <nav class="nav" id="nav">
         <ul class="nav-list">
           <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-          <li><a href="#productos" class="nav-link">Productos</a></li>
           <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#productos" class="nav-link">Productos</a></li>
+          <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
@@ -50,10 +52,10 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul class="mobile-nav-list">
       <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
-      <li><a href="#productos" class="mobile-nav-link">Productos</a></li>
       <li><a href="#servicios" class="mobile-nav-link">Servicios</a></li>
+      <li><a href="#productos" class="mobile-nav-link">Productos</a></li>
+      <li><a href="#ubicacion" class="mobile-nav-link">Ubicación</a></li>
       <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
-      <li><a href="#contacto" class="btn btn-primary mobile-cta">Cotizar</a></li>
     </ul>
   </div>
 
@@ -268,6 +270,63 @@
     </section>
   </main>
 
+  <!-- Map Section -->
+    <section class="map-section" id="ubicacion">
+      <div class="container">
+        <h2 class="section-title">Nuestra Ubicación</h2>
+        <p class="section-subtitle">
+          Visítanos en Niquinohomo, Masaya. Estamos a 150 metros al oeste del Restaurante La Bandeja.
+        </p>
+        <div class="map-wrapper">
+          <div id="map"></div>
+          <div class="map-info-card">
+            <div class="map-info-item">
+              <div class="map-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Dirección</strong>
+                <p>Del restaurante La Bandeja 150 mts oeste, Niquinohomo, Masaya</p>
+              </div>
+            </div>
+            <div class="map-info-item">
+              <div class="map-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Horario</strong>
+                <p>Lunes – Sábado: 7:00 am – 6:00 pm</p>
+                <p>Domingo: 8:00 am – 12:00 pm</p>
+              </div>
+            </div>
+            <div class="map-info-item">
+              <div class="map-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+505 7709 6403</p>
+              </div>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=11.9087,-86.0996" target="_blank" rel="noreferrer noopener" class="btn btn-primary btn-block map-directions-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+              </svg>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   <!-- Footer -->
   <footer class="footer" id="contacto">
     <div class="container footer-container">
@@ -375,5 +434,27 @@
   </div>
 
   <script src="./scripts/script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    // Niquinohomo, Masaya, Nicaragua
+    const lat = 11.9087, lng = -86.0996;
+    const map = L.map('map', { scrollWheelZoom: false }).setView([lat, lng], 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    const icon = L.divIcon({
+      className: '',
+      html: `<div style="background:#f97316;width:36px;height:36px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;">
+               <span style="transform:rotate(45deg);font-size:16px;">🔧</span>
+             </div>`,
+      iconSize: [36, 36],
+      iconAnchor: [18, 36],
+      popupAnchor: [0, -38]
+    });
+    L.marker([lat, lng], { icon })
+      .addTo(map)
+      .bindPopup('<strong>Ferretería Alvarado</strong><br>150 mts oeste del Rest. La Bandeja<br>Niquinohomo, Masaya')
+      .openPopup();
+  </script>
 </body>
 </html>
