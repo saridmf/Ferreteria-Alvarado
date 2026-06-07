@@ -1,134 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Estilos/styles.css">
-  <link rel="stylesheet" href="../Estilos/readmore.css">
-  <title>Herramientas Eléctricas - Ferretería Alvarado</title>
-</head>
-<body>
-  <header class="header" id="header">
-    <div class="container header-container">
-      <a href="../index.html" class="logo">
-        <img src="../Assets/logo ferreteria -header.png" class="logo-icon" alt="Ferretería Alvarado logo">
-        <span class="logo-text">Ferretería Alvarado</span>
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+    <link rel="stylesheet" href="../Estilos/readmore.css" />
+    <title>Herramientas Eléctricas - Ferretería Alvarado</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a href="../index.html" class="logo">
+          <img
+            src="../Assets/logo ferreteria -header.png"
+            class="logo-icon"
+            alt="Ferretería Alvarado logo"
+          />
+          <span class="logo-text">Ferretería Alvarado</span>
+        </a>
 
-      <nav class="nav" id="nav">
-        <ul class="nav-list">
-          <li><a href="../index.html#inicio" class="nav-link active">Inicio</a></li>
-          <li><a href="../index.html#productos" class="nav-link">Productos</a></li>
-          <li><a href="../index.html#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="../index.html#inicio" class="nav-link active">Inicio</a>
+            </li>
+            <li>
+              <a href="../index.html#servicios" class="nav-link">Servicios</a>
+            </li>
+            <li>
+              <a href="../index.html#productos" class="nav-link">Productos</a>
+            </li>
+            <li>
+              <a href="../index.html#noticias" class="nav-link">Noticias</a>
+            </li>
+            <li>
+              <a href="../index.html#ubicacion" class="nav-link">Ubicación</a>
+            </li>
+            <li>
+              <a href="../index.html#contacto" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
 
-      <a href="../index.html#contacto" class="btn btn-primary header-cta">Cotizar</a>
+        <a href="../index.html#contacto" class="btn btn-primary header-cta"
+          >Cotizar</a
+        >
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+       <li>
+              <a href="../index.html#inicio" class="mobile-nav-link">Inicio</a>
+            </li>
+            <li>
+              <a href="../index.html#servicios" class="mobile-nav-link">Servicios</a>
+            </li>
+            <li>
+              <a href="../index.html#productos" class="mobile-nav-link">Productos</a>
+            </li>
+            <li>
+              <a href="../index.html#noticias" class="mobile-nav-link">Noticias</a>
+            </li>
+            <li>
+              <a href="../index.html#ubicacion" class="mobile-nav-link">Ubicación</a>
+            </li>
+            <li>
+              <a href="../index.html#contacto" class="mobile-nav-link">Contacto</a>
+            </li>
+         
+        </li>
+      </ul>
     </div>
-  </header>
 
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <ul class="mobile-nav-list">
-      <li><a href="../index.html#inicio" class="mobile-nav-link">Inicio</a></li>
-      <li><a href="../index.html#productos" class="mobile-nav-link">Productos</a></li>
-      <li><a href="../index.html#servicios" class="mobile-nav-link">Servicios</a></li>
-      <li><a href="../index.html#contacto" class="mobile-nav-link">Contacto</a></li>
-      <li><a href="../index.html#contacto" class="btn btn-primary mobile-cta">Cotizar</a></li>
-    </ul>
-  </div>
+    <main class="main-content">
+      <section class="product-section container">
+        <div class="product-container">
+          <div class="image-section">
+            <img
+              src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&h=400&fit=crop"
+              alt="Herramientas eléctricas"
+            />
+          </div>
 
-  <main class="main-content">
-    <section class="product-section container">
-      <div class="product-container">
-        <div class="image-section">
-          <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&h=400&fit=crop" alt="Herramientas eléctricas" />
-        </div>
-
-        <article class="product-card">
-          <h1 class="title">Herramientas Eléctricas Profesionales</h1>
-          <p class="meta"><strong>Categoría:</strong> Herramientas Eléctricas</p>
-
-          <div class="description">
-            <p>
-              Encuentra taladros, sierras, lijadoras y accesorios eléctricos pensados para trabajos de alto rendimiento.
-              <span id="dots">...</span>
-              <span id="more">Nuestra selección incluye marcas confiables, buena durabilidad y opciones para profesionales y aficionados. Ideal para proyectos de obra y remodelación con el equipo correcto.</span>
+          <article class="product-card">
+            <h1 class="title">Herramientas Eléctricas Profesionales</h1>
+            <p class="meta">
+              <strong>Categoría:</strong> Herramientas Eléctricas
             </p>
-            <button id="btn" class="btn btn-outline readmore-btn" aria-expanded="false" aria-controls="more">Leer más</button>
-          </div>
-        </article>
-      </div>
-    </section>
 
-    <!-- Products Grid -->
-    <section class="items-section container">
-      <h2 class="items-section-title">Productos disponibles</h2>
-      <div class="items-grid">
+            <div class="description">
+              <p>
+                Encuentra taladros, sierras, lijadoras y accesorios eléctricos
+                pensados para trabajos de alto rendimiento.
+                <span id="dots">...</span>
+                <span id="more"
+                  >Nuestra selección incluye marcas confiables, buena
+                  durabilidad y opciones para profesionales y aficionados. Ideal
+                  para proyectos de obra y remodelación con el equipo
+                  correcto.</span
+                >
+              </p>
+              <button
+                id="btn"
+                class="btn btn-outline readmore-btn"
+                aria-expanded="false"
+                aria-controls="more"
+              >
+                Leer más
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&h=300&fit=crop" alt="Taladro percutor">
+      <!-- Products Grid -->
+      <section class="items-section container">
+        <h2 class="items-section-title">Productos disponibles</h2>
+        <div class="items-grid">
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&h=300&fit=crop"
+                alt="Taladro percutor"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Taladro Percutor 13mm</h3>
+              <p>
+                Potencia de 750W con mandril de 13mm, ideal para concreto y
+                mampostería. Incluye maletín y brocas.
+              </p>
+              <a href="../index.html#catalogo" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
           </div>
-          <div class="item-body">
-            <h3>Taladro Percutor 13mm</h3>
-            <p>Potencia de 750W con mandril de 13mm, ideal para concreto y mampostería. Incluye maletín y brocas.</p>
-            <a href="../index.html#catalogo" class="btn btn-primary item-btn">Cotizar</a>
+
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1513467655676-561b7d489a88?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Sierra circular"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Sierra Circular 7¼"</h3>
+              <p>
+                Motor 1400W con profundidad de corte ajustable hasta 65mm. Guía
+                paralela incluida para cortes rectos.
+              </p>
+              <a href="../index.html#catalogo" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1522322512347-a0e57fd1744c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Amoladora angular"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Amoladora Angular 4½"</h3>
+              <p>
+                850W con disco de desbaste, corte y pulido. Protector ajustable
+                y empuñadura lateral ergonómica.
+              </p>
+              <a href="../index.html#catalogo" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1681506560879-d4129fa18fb5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Lijadora orbital"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Lijadora Orbital 125mm</h3>
+              <p>
+                300W con sistema de extracción de polvo. Movimiento orbital de
+                2mm para acabados finos en madera y metal.
+              </p>
+              <a href="../index.html#catalogo" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1682147307418-07ad7e897bc9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Compresor de aire"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Compresor de Aire 24L</h3>
+              <p>
+                Motor 1.5HP con tanque de 24 litros y presión máxima de 115 PSI.
+                Incluye kit de accesorios neumáticos.
+              </p>
+              <a href="../index.html#catalogo" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1513467655676-561b7d489a88?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sierra circular">
-          </div>
-          <div class="item-body">
-            <h3>Sierra Circular 7¼"</h3>
-            <p>Motor 1400W con profundidad de corte ajustable hasta 65mm. Guía paralela incluida para cortes rectos.</p>
-            <a href="../index.html#catalogo" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1522322512347-a0e57fd1744c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Amoladora angular">
-          </div>
-          <div class="item-body">
-            <h3>Amoladora Angular 4½"</h3>
-            <p>850W con disco de desbaste, corte y pulido. Protector ajustable y empuñadura lateral ergonómica.</p>
-            <a href="../index.html#catalogo" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://plus.unsplash.com/premium_photo-1681506560879-d4129fa18fb5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lijadora orbital">
-          </div>
-          <div class="item-body">
-            <h3>Lijadora Orbital 125mm</h3>
-            <p>300W con sistema de extracción de polvo. Movimiento orbital de 2mm para acabados finos en madera y metal.</p>
-            <a href="../index.html#catalogo" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://plus.unsplash.com/premium_photo-1682147307418-07ad7e897bc9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Compresor de aire">
-          </div>
-          <div class="item-body">
-            <h3>Compresor de Aire 24L</h3>
-            <p>Motor 1.5HP con tanque de 24 litros y presión máxima de 115 PSI. Incluye kit de accesorios neumáticos.</p>
-            <a href="../index.html#catalogo" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <script src="../scripts/readmore.js"></script>
-</body>
+    <script src="../scripts/readmore.js"></script>
+  </body>
 </html>

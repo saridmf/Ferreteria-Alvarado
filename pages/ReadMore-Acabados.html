@@ -1,134 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Estilos/styles.css">
-  <link rel="stylesheet" href="../Estilos/readmore.css">
-  <title>Acabados y Pinturas - Ferretería Alvarado</title>
-</head>
-<body>
-  <header class="header" id="header">
-    <div class="container header-container">
-      <a href="../index.html" class="logo">
-        <img src="../Assets/logo ferreteria -header.png" class="logo-icon" alt="Ferretería Alvarado logo">
-        <span class="logo-text">Ferretería Alvarado</span>
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+    <link rel="stylesheet" href="../Estilos/readmore.css" />
+    <title>Acabados y Pinturas - Ferretería Alvarado</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a href="../index.html" class="logo">
+          <img
+            src="../Assets/logo ferreteria -header.png"
+            class="logo-icon"
+            alt="Ferretería Alvarado logo"
+          />
+          <span class="logo-text">Ferretería Alvarado</span>
+        </a>
 
-      <nav class="nav" id="nav">
-        <ul class="nav-list">
-          <li><a href="../index.html#inicio" class="nav-link active">Inicio</a></li>
-          <li><a href="../index.html#productos" class="nav-link">Productos</a></li>
-          <li><a href="../index.html#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="../index.html#inicio" class="nav-link active">Inicio</a>
+            </li>
+            <li>
+              <a href="../index.html#servicios" class="nav-link">Servicios</a>
+            </li>
+            <li>
+              <a href="../index.html#productos" class="nav-link">Productos</a>
+            </li>
+            <li>
+              <a href="../index.html#noticias" class="nav-link">Noticias</a>
+            </li>
+            <li>
+              <a href="../index.html#ubicacion" class="nav-link">Ubicación</a>
+            </li>
+            <li>
+              <a href="../index.html#contacto" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
 
-      <a href="../index.html#contacto" class="btn btn-primary header-cta">Cotizar</a>
+        <a href="../index.html#contacto" class="btn btn-primary header-cta"
+          >Cotizar</a
+        >
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+       <ul class="mobile-nav-list">
+       <li>
+              <a href="../index.html#inicio" class="mobile-nav-link">Inicio</a>
+            </li>
+            <li>
+              <a href="../index.html#servicios" class="mobile-nav-link">Servicios</a>
+            </li>
+            <li>
+              <a href="../index.html#productos" class="mobile-nav-link">Productos</a>
+            </li>
+            <li>
+              <a href="../index.html#noticias" class="mobile-nav-link">Noticias</a>
+            </li>
+            <li>
+              <a href="../index.html#ubicacion" class="mobile-nav-link">Ubicación</a>
+            </li>
+            <li>
+              <a href="../index.html#contacto" class="mobile-nav-link">Contacto</a>
+            </li>
+         
+        </li>
+      </ul>
     </div>
-  </header>
 
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <ul class="mobile-nav-list">
-      <li><a href="../index.html#inicio" class="mobile-nav-link">Inicio</a></li>
-      <li><a href="../index.html#productos" class="mobile-nav-link">Productos</a></li>
-      <li><a href="../index.html#servicios" class="mobile-nav-link">Servicios</a></li>
-      <li><a href="../index.html#contacto" class="mobile-nav-link">Contacto</a></li>
-      <li><a href="../index.html#contacto" class="btn btn-primary mobile-cta">Cotizar</a></li>
-    </ul>
-  </div>
+    <main class="main-content">
+      <section class="product-section container">
+        <div class="product-container">
+          <div class="image-section">
+            <img
+              src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=300&fit=crop"
+              alt="Acabados y pinturas"
+            />
+          </div>
 
-  <main class="main-content">
-    <section class="product-section container">
-      <div class="product-container">
-        <div class="image-section">
-          <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=300&fit=crop" alt="Acabados y pinturas" />
+          <article class="product-card">
+            <h1 class="title">Acabados y Pinturas de Alto Impacto</h1>
+            <p class="meta"><strong>Categoría:</strong> Acabados y Pinturas</p>
+
+            <div class="description">
+              <p>
+                Descubre pinturas de alta cobertura, selladores y productos de
+                acabado para interiores y exteriores.
+                <span id="dots">...</span>
+                <span id="more"
+                  >Perfectos para darle un acabado profesional a tus paredes,
+                  fachadas y detalles decorativos. Calidad superior y tonos
+                  actualizados para cada estilo.</span
+                >
+              </p>
+              <button
+                id="btn"
+                class="btn btn-outline readmore-btn"
+                aria-expanded="false"
+                aria-controls="more"
+              >
+                Leer más
+              </button>
+            </div>
+          </article>
         </div>
+      </section>
 
-        <article class="product-card">
-          <h1 class="title">Acabados y Pinturas de Alto Impacto</h1>
-          <p class="meta"><strong>Categoría:</strong> Acabados y Pinturas</p>
-
-          <div class="description">
-            <p>
-              Descubre pinturas de alta cobertura, selladores y productos de acabado para interiores y exteriores.
-              <span id="dots">...</span>
-              <span id="more">Perfectos para darle un acabado profesional a tus paredes, fachadas y detalles decorativos. Calidad superior y tonos actualizados para cada estilo.</span>
-            </p>
-            <button id="btn" class="btn btn-outline readmore-btn" aria-expanded="false" aria-controls="more">Leer más</button>
+      <!-- Products Grid -->
+      <section class="items-section container">
+        <h2 class="items-section-title">Productos disponibles</h2>
+        <div class="items-grid">
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=300&fit=crop"
+                alt="Pintura látex interior"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Pintura Látex Interior</h3>
+              <p>
+                Balde de 4 galones con alta cobertura y secado rápido. Lavable,
+                sin olor y en más de 30 tonos.
+              </p>
+              <a href="../index.html#contacto" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
           </div>
-        </article>
-      </div>
-    </section>
 
-    <!-- Products Grid -->
-    <section class="items-section container">
-      <h2 class="items-section-title">Productos disponibles</h2>
-      <div class="items-grid">
-
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=300&fit=crop" alt="Pintura látex interior">
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1585676737728-432f58d5fdba?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
+                alt="Pintura de aceite exterior"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Pintura Acrílica Exterior</h3>
+              <p>
+                Fórmula resistente a la intemperie y rayos UV. Protege fachadas
+                y superficies expuestas al sol y la lluvia.
+              </p>
+              <a href="../index.html#contacto" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
           </div>
-          <div class="item-body">
-            <h3>Pintura Látex Interior</h3>
-            <p>Balde de 4 galones con alta cobertura y secado rápido. Lavable, sin olor y en más de 30 tonos.</p>
-            <a href="../index.html#contacto" class="btn btn-primary item-btn">Cotizar</a>
+
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1629397545188-cf2da30db99b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Sellador de concreto"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Sellador Fijador de Paredes</h3>
+              <p>
+                Penetra en la superficie y sella poros antes de pintar. Mejora
+                la adherencia y durabilidad del acabado final.
+              </p>
+              <a href="../index.html#contacto" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=400&h=300&fit=crop"
+                alt="Pintura esmalte"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Esmalte Sintético Brillante</h3>
+              <p>
+                Para metales, madera y superficies lisas. Acabado brillante de
+                alta resistencia a la corrosión y humedad.
+              </p>
+              <a href="../index.html#contacto" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-img-wrapper">
+              <img
+                src="https://media.istockphoto.com/id/2259033868/photo/worker-applying-cement-plaster-on-concrete-column.jpg?s=2048x2048&w=is&k=20&c=6Hb4WfMsgdg-Coly29P8v5dXOAZPha8kx00gxfoUw5M="
+                alt="Repello fino"
+              />
+            </div>
+            <div class="item-body">
+              <h3>Repello Fino Prefabricado</h3>
+              <p>
+                Mezcla lista para aplicar en paredes interiores y exteriores.
+                Acabado liso y uniforme de rápido fraguado.
+              </p>
+              <a href="../index.html#contacto" class="btn btn-primary item-btn"
+                >Cotizar</a
+              >
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1585676737728-432f58d5fdba?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " alt="Pintura de aceite exterior">
-          </div>
-          <div class="item-body">
-            <h3>Pintura Acrílica Exterior</h3>
-            <p>Fórmula resistente a la intemperie y rayos UV. Protege fachadas y superficies expuestas al sol y la lluvia.</p>
-            <a href="../index.html#contacto" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=400&h=300&fit=crop" alt="Sellador de concreto">
-          </div>
-          <div class="item-body">
-            <h3>Sellador Fijador de Paredes</h3>
-            <p>Penetra en la superficie y sella poros antes de pintar. Mejora la adherencia y durabilidad del acabado final.</p>
-            <a href="../index.html#contacto" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=400&h=300&fit=crop" alt="Pintura esmalte">
-          </div>
-          <div class="item-body">
-            <h3>Esmalte Sintético Brillante</h3>
-            <p>Para metales, madera y superficies lisas. Acabado brillante de alta resistencia a la corrosión y humedad.</p>
-            <a href="../index.html#contacto" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-        <div class="item-card">
-          <div class="item-img-wrapper">
-            <img src="https://media.istockphoto.com/id/2259033868/photo/worker-applying-cement-plaster-on-concrete-column.jpg?s=2048x2048&w=is&k=20&c=6Hb4WfMsgdg-Coly29P8v5dXOAZPha8kx00gxfoUw5M=" alt="Repello fino">
-          </div>
-          <div class="item-body">
-            <h3>Repello Fino Prefabricado</h3>
-            <p>Mezcla lista para aplicar en paredes interiores y exteriores. Acabado liso y uniforme de rápido fraguado.</p>
-            <a href="../index.html#contacto" class="btn btn-primary item-btn">Cotizar</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <script src="../scripts/readmore.js"></script>
-</body>
+    <script src="../scripts/readmore.js"></script>
+  </body>
 </html>
