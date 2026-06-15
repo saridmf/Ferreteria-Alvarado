@@ -187,17 +187,18 @@ function trackGalleryCardClick(cardIndex, cardCaption) {
     gtag('event', 'gallery_card_click', {
       event_category: 'Galería',
       event_label: cardCaption,
-      card_position: cardIndex
+      card_position: cardIndex,
+      destination: 'whatsapp'
     });
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const galleryCards = document.querySelectorAll('.gallery-card');
+  const galleryLinks = document.querySelectorAll('.gallery-card-link');
 
-  galleryCards.forEach((card, index) => {
-    card.addEventListener('click', () => {
-      const caption = card.querySelector('.gallery-caption')?.textContent.trim() || `card-${index}`;
+  galleryLinks.forEach((link, index) => {
+    link.addEventListener('click', () => {
+      const caption = link.querySelector('.gallery-caption')?.textContent.trim() || `card-${index}`;
       trackGalleryCardClick(index, caption);
     });
   });
