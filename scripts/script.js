@@ -178,3 +178,27 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll();
   updateActiveNavLink();
 });
+
+///////////////////////////////////////////
+
+// Tracking de clicks en las cards del carrusel de galería
+function trackGalleryCardClick(cardIndex, cardCaption) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'gallery_card_click', {
+      event_category: 'Galería',
+      event_label: cardCaption,
+      card_position: cardIndex
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const galleryCards = document.querySelectorAll('.gallery-card');
+
+  galleryCards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+      const caption = card.querySelector('.gallery-caption')?.textContent.trim() || `card-${index}`;
+      trackGalleryCardClick(index, caption);
+    });
+  });
+});
