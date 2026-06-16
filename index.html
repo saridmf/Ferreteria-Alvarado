@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CCJS2ML7VX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CCJS2ML7VX');
-</script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCJS2ML7VX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CCJS2ML7VX');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferretería Alvarado - Construye tus proyectos con la mejor base</title>
-  <meta name="description" content="Compra materiales de construcción y herramientas desde la comodidad de tu casa. Rápido, variedad y al mejor precio del mercado.">
+  <meta name="description"
+    content="Compra materiales de construcción y herramientas desde la comodidad de tu casa. Rápido, variedad y al mejor precio del mercado.">
   <link rel="stylesheet" href="./Estilos/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+
 </head>
+
 <body>
   <!-- Header -->
   <header class="header" id="header">
@@ -29,7 +33,7 @@
         <img src="./Assets/logo ferreteria -header.png" class="logo-icon">
         <span class="logo-text">Ferretería Alvarado</span>
       </a>
-      
+
       <nav class="nav" id="nav">
         <ul class="nav-list">
           <li><a href="#inicio" class="nav-link active">Inicio</a></li>
@@ -41,9 +45,9 @@
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
-      
-      
-      
+
+
+
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
         <span class="hamburger"></span>
       </button>
@@ -72,11 +76,13 @@
             Construye tus proyectos con la <span class="text-orange">mejor base</span>
           </h1>
           <p class="hero-description">
-            Compra materiales de construcción y herramientas desde la comodidad de tu casa. Rápido, variedad y al mejor precio del mercado.
+            Compra materiales de construcción y herramientas desde la comodidad de tu casa. Rápido, variedad y al mejor
+            precio del mercado.
           </p>
           <a href="#productos" class="btn btn-primary btn-lg">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+              <path
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
             </svg>
             Ver Catálogo de Productos
           </a>
@@ -93,14 +99,15 @@
       <div class="container">
         <h2 class="section-title">¿Por qué elegir Ferretería Alvarado?</h2>
         <p class="section-subtitle">
-          Digitaliza la experiencia de tus clientes porque tu única preocupación sea vender. Seleccionamos artículos de buen apaño, precios justos y tiempos rápidos.
+          Digitaliza la experiencia de tus clientes porque tu única preocupación sea vender. Seleccionamos artículos de
+          buen apaño, precios justos y tiempos rápidos.
         </p>
-        
+
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
               </svg>
             </div>
             <h3 class="feature-title">Cotizaciones Rápidas</h3>
@@ -108,11 +115,11 @@
               Cotiza tus materiales y recibe el monto en segundos con una precisión sin igual.
             </p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
               </svg>
             </div>
             <h3 class="feature-title">Stock Siempre Disponible</h3>
@@ -120,11 +127,12 @@
               Contamos con el inventario suficiente para satisfacer la demanda de tu proyecto, sin importar el tamaño.
             </p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
               </svg>
             </div>
             <h3 class="feature-title">Pedidos y Facturación</h3>
@@ -132,11 +140,12 @@
               Realiza pedidos y genera facturas electrónicas sin complicaciones ni trámites engorrosos.
             </p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                <path
+                  d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
               </svg>
             </div>
             <h3 class="feature-title">Asesoría Técnica</h3>
@@ -160,26 +169,29 @@
           </div>
           <a href="#" class="btn btn-outline">Consultar Catálogo Completo</a>
         </div>
-        
+
         <div class="catalog-grid">
           <div class="catalog-card catalog-card-featured">
-            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&h=400&fit=crop" alt="Herramientas eléctricas" class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&h=400&fit=crop"
+              alt="Herramientas eléctricas" class="catalog-image">
             <div class="catalog-content">
               <h3 class="catalog-title">Herramientas Eléctricas</h3>
               <p class="catalog-description">
-                Taladros, sierras y equipos eléctricos de las mejores marcas del mercado para profesionales y aficionados.
+                Taladros, sierras y equipos eléctricos de las mejores marcas del mercado para profesionales y
+                aficionados.
               </p>
               <a href="./pages/ReadMore-Herramientas.html" class="catalog-link">
                 Ver productos
                 <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
           </div>
-          
+
           <div class="catalog-card">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Materiales de obra gris" class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
+              alt="Materiales de obra gris" class="catalog-image">
             <div class="catalog-content">
               <h3 class="catalog-title">Materiales de Obra Gris</h3>
               <p class="catalog-description">
@@ -188,14 +200,15 @@
               <a href="./pages/ReadMore-Materiales.html" class="catalog-link">
                 Ver productos
                 <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
           </div>
-          
+
           <div class="catalog-card">
-            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=300&fit=crop" alt="Acabados y pinturas" class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=400&h=300&fit=crop"
+              alt="Acabados y pinturas" class="catalog-image">
             <div class="catalog-content">
               <h3 class="catalog-title">Acabados y Pinturas</h3>
               <p class="catalog-description">
@@ -204,7 +217,7 @@
               <a href="./pages/ReadMore-Acabados.html" class="catalog-link">
                 Ver productos
                 <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
@@ -213,94 +226,110 @@
       </div>
     </section>
 
-   
-   <!-- Gallery Section -->
-<section class="gallery-section" id="galeria">
-  <div class="container">
-    <h2 class="section-title">Promociones</h2>
-    <p class="section-subtitle">
-      Un vistazo rápido a nuestros espacios, materiales y soluciones de construcción en acción.
-    </p>
 
-    <div class="gallery-viewport" aria-label="Carrusel de fotos de Ferretería Alvarado">
-      <div class="gallery-track">
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="galeria">
+      <div class="container">
+        <h2 class="section-title">Promociones</h2>
+        <p class="section-subtitle">
+          Un vistazo rápido a nuestros espacios, materiales y soluciones de construcción en acción.
+        </p>
 
-        <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion" target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-1" data-promo-name="Descuento">
-          <article class="gallery-card is-active">
-            <img src="./Assets/promo-1.jpeg" alt="Materiales de construcción en exhibición">
-            <div class="gallery-caption">Materiales y herramientas para cada obra</div>
-          </article>
-        </a>
+        <div class="gallery-viewport" aria-label="Carrusel de fotos de Ferretería Alvarado">
+          <div class="gallery-track">
 
-        <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion" target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-2" data-promo-name="Entrega-gratis">
-          <article class="gallery-card">
-            <img src="./Assets/promo-2.jpeg" alt="Equipo trabajando en construcción">
-            <div class="gallery-caption">Asesoría técnica y atención experta</div>
-          </article>
-        </a>
+            <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion"
+              target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-1"
+              data-promo-name="Descuento">
+              <article class="gallery-card is-active">
+                <img src="./Assets/promo-1.jpeg" alt="Materiales de construcción en exhibición">
+                <div class="gallery-caption">Materiales y herramientas para cada obra</div>
+              </article>
+            </a>
 
-        <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion" target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-3" data-promo-name="Plastitank">
-          <article class="gallery-card is-active">
-            <img src="./Assets/promo-3.jpeg" alt="Obra con herramientas y materiales">
-            <div class="gallery-caption">Soluciones para proyectos grandes y pequeños</div>
-          </article>
-        </a>
+            <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion"
+              target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-2"
+              data-promo-name="Entrega-gratis">
+              <article class="gallery-card">
+                <img src="./Assets/promo-2.jpeg" alt="Equipo trabajando en construcción">
+                <div class="gallery-caption">Asesoría técnica y atención experta</div>
+              </article>
+            </a>
 
-  
+            <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion"
+              target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-3"
+              data-promo-name="Plastitank">
+              <article class="gallery-card is-active">
+                <img src="./Assets/promo-3.jpeg" alt="Obra con herramientas y materiales">
+                <div class="gallery-caption">Soluciones para proyectos grandes y pequeños</div>
+              </article>
+            </a>
 
-       
-       <!--Duplicados -->
-      
-         <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion" target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-1" data-promo-name="Descuento">
-          <article class="gallery-card is-active">
-            <img src="./Assets/promo-1.jpeg" alt="Materiales de construcción en exhibición">
-            <div class="gallery-caption">Materiales y herramientas para cada obra</div>
-          </article>
-        </a>
 
-        <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion" target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-2" data-promo-name="Entrega-gratis">
-          <article class="gallery-card">
-            <img src="./Assets/promo-2.jpeg" alt="Equipo trabajando en construcción">
-            <div class="gallery-caption">Asesoría técnica y atención experta</div>
-          </article>
-        </a>
 
-        <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion" target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-3" data-promo-name="Plastitank">
-          <article class="gallery-card is-active">
-            <img src="./Assets/promo-3.jpeg" alt="Obra con herramientas y materiales">
-            <div class="gallery-caption">Soluciones para proyectos grandes y pequeños</div>
-          </article>
-        </a>
+
+            <!--Duplicados -->
+
+            <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion"
+              target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-1"
+              data-promo-name="Descuento">
+              <article class="gallery-card is-active">
+                <img src="./Assets/promo-1.jpeg" alt="Materiales de construcción en exhibición">
+                <div class="gallery-caption">Materiales y herramientas para cada obra</div>
+              </article>
+            </a>
+
+            <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion"
+              target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-2"
+              data-promo-name="Entrega-gratis">
+              <article class="gallery-card">
+                <img src="./Assets/promo-2.jpeg" alt="Equipo trabajando en construcción">
+                <div class="gallery-caption">Asesoría técnica y atención experta</div>
+              </article>
+            </a>
+
+            <a href="https://wa.me/50582120985?text=Hola%20ferreteria%20Alvarado,%20estoy%20interesado%20en%20esta%20promocion"
+              target="_blank" rel="noreferrer noopener" class="gallery-card-link" data-promo-id="promo-3"
+              data-promo-name="Plastitank">
+              <article class="gallery-card is-active">
+                <img src="./Assets/promo-3.jpeg" alt="Obra con herramientas y materiales">
+                <div class="gallery-caption">Soluciones para proyectos grandes y pequeños</div>
+              </article>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- News Section -->
     <section class="news" id="noticias">
       <div class="container">
         <h2 class="section-title">Últimas Noticias</h2>
-        
+
         <div class="news-grid">
           <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=250&fit=crop" alt="Herramientas esenciales" class="news-image">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=250&fit=crop"
+              alt="Herramientas esenciales" class="news-image">
             <div class="news-content">
               <span class="news-date">15 de Mayo, 2026</span>
               <h3 class="news-title">5 herramientas esenciales para todo proyecto en casa</h3>
               <p class="news-excerpt">
-                Descubre cuáles son las herramientas que no pueden faltar en tu hogar para realizar reparaciones y proyectos de bricolaje.
+                Descubre cuáles son las herramientas que no pueden faltar en tu hogar para realizar reparaciones y
+                proyectos de bricolaje.
               </p>
               <a href="#" class="news-link">
                 Leer más
                 <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
           </article>
-          
+
           <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1681812490689-2bb9ab7ca660?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Proteger techos" class="news-image">
+            <img
+              src="https://images.unsplash.com/photo-1681812490689-2bb9ab7ca660?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Proteger techos" class="news-image">
             <div class="news-content">
               <span class="news-date">10 de Mayo, 2026</span>
               <h3 class="news-title">Cómo proteger tus techos antes de la temporada de lluvias</h3>
@@ -310,14 +339,15 @@
               <a href="#" class="news-link">
                 Leer más
                 <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
           </article>
-          
+
           <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=400&h=250&fit=crop" alt="Tendencias diseño" class="news-image">
+            <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=400&h=250&fit=crop"
+              alt="Tendencias diseño" class="news-image">
             <div class="news-content">
               <span class="news-date">5 de Mayo, 2026</span>
               <h3 class="news-title">Tendencias de diseño: acabados que aumentarán el valor de tu obra</h3>
@@ -327,7 +357,7 @@
               <a href="#" class="news-link">
                 Leer más
                 <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
@@ -338,98 +368,102 @@
   </main>
 
   <!-- Map Section -->
-    <section class="map-section" id="ubicacion">
-      <div class="container">
-        <h2 class="section-title">Nuestra Ubicación</h2>
-        <p class="section-subtitle">
-          Visítanos en Niquinohomo, Masaya. Estamos a 150 metros al oeste del Restaurante La Bandeja.
-        </p>
-        <div class="map-wrapper">
-          <div id="map"></div>
-          <div class="map-info-card">
-            <div class="map-info-item">
-              <div class="map-info-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Dirección</strong>
-                <p>Del restaurante La Bandeja 150 mts oeste, Niquinohomo, Masaya</p>
-              </div>
-            </div>
-            <div class="map-info-item">
-              <div class="map-info-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Horario</strong>
-                <p>Lunes – Sábado: 7:00 am – 6:00 pm</p>
-                <p>Domingo: 8:00 am – 12:00 pm</p>
-              </div>
-            </div>
-            <div class="map-info-item">
-              <div class="map-info-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Teléfono</strong>
-                <p>+505 7709 6403</p>
-              </div>
-            </div>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=11.9087,-86.0996" target="_blank" rel="noreferrer noopener" class="btn btn-primary btn-block map-directions-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;">
-                <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+  <section class="map-section" id="ubicacion">
+    <div class="container">
+      <h2 class="section-title">Nuestra Ubicación</h2>
+      <p class="section-subtitle">
+        Visítanos en Niquinohomo, Masaya. Estamos a 150 metros al oeste del Restaurante La Bandeja.
+      </p>
+      <div class="map-wrapper">
+        <div id="map"></div>
+        <div class="map-info-card">
+          <div class="map-info-item">
+            <div class="map-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
               </svg>
-              Cómo llegar
-            </a>
+            </div>
+            <div>
+              <strong>Dirección</strong>
+              <p>Del restaurante La Bandeja 150 mts oeste, Niquinohomo, Masaya</p>
+            </div>
           </div>
+          <div class="map-info-item">
+            <div class="map-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div>
+              <strong>Horario</strong>
+              <p>Lunes – Sábado: 7:00 am – 6:00 pm</p>
+              <p>Domingo: 8:00 am – 12:00 pm</p>
+            </div>
+          </div>
+          <div class="map-info-item">
+            <div class="map-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+505 7709 6403</p>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=11.9087,-86.0996" target="_blank"
+            rel="noreferrer noopener" class="btn btn-primary btn-block map-directions-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;">
+              <polygon points="3 11 22 2 13 21 11 13 3 11" />
+            </svg>
+            Cómo llegar
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer" id="contacto">
     <div class="container footer-container">
       <div class="footer-info">
         <a href="#" class="logo logo-footer">
-         <img src="./Assets/logo ferreteria -header.png" alt="" class="logo-icon">
+          <img src="./Assets/logo ferreteria -header.png" alt="" class="logo-icon">
           <span class="logo-text">Ferretería Alvarado</span>
         </a>
         <p class="footer-description">
-          Somos tu ferretería de confianza, ofreciendo materiales de construcción de primera calidad desde hace más de 10 años.
+          Somos tu ferretería de confianza, ofreciendo materiales de construcción de primera calidad desde hace más de
+          10 años.
         </p>
-        
+
         <div class="footer-contact">
           <div class="contact-item">
             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-              <circle cx="12" cy="10" r="3"/>
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
             </svg>
             <span>Del restaurante La bandeja 150 mts oeste Niquinohomo</span>
           </div>
           <div class="contact-item">
             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
             </svg>
             <span>+505 77096403</span>
           </div>
           <div class="contact-item">
             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
             </svg>
             <span>ferreteriaaalvarado@gmail.com</span>
           </div>
         </div>
       </div>
-      
+
       <div class="footer-form-wrapper">
         <h3 class="footer-form-title">Contáctanos</h3>
         <form class="contact-form" id="contactForm">
@@ -448,30 +482,30 @@
           </div>
           <div class="form-group">
             <label for="message" class="form-label">Interes</label>
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+            <textarea id="message" name="message" class="form-input form-textarea"
+              placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
         </form>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <div class="container">
         <p>&copy; 2026 Ferretería Alvarado. Todos los derechos reservados.</p>
         <!-- Social buttons for small screens -->
         <div class="footer-socials" aria-hidden="false">
-          <a href="https://wa.me/50577096403?text=Hola%20Ferreter%C3%ADa%20Alvarado" class="footer-social-link whatsapp" target="_blank" rel="noreferrer noopener" data-network="whatsapp" data-location="footer" aria-label="WhatsApp">
-            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
-          </a>
-          <a href=" https://www.facebook.com/share/1EHV8sSbC9/" class="footer-social-link facebook" target="_blank" rel="noreferrer noopener" data-network="Facebook" data-location="footer" aria-label="Facebook">
-            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-          </a>
-          <a href="https://www.instagram.com/ferreteria_alvarado.ni?utm_source=qr&igsh=b2poNHB6bXVrMWFj" class="footer-social-link instagram" target="_blank" rel="noreferrer noopener"data-network="Instagram" data-location="footer" aria-label="Instagram">
-            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-          </a>
-          <a href="#" class="footer-social-link tiktok" target="_blank" rel="noreferrer noopener"data-network="Instagram" data-location="footer" aria-label="TikTok">
-            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
-          </a>
+          <a href="https://wa.me/50577096403?text=Hola%20Ferreter%C3%ADa%20Alvarado" class="footer-social-link whatsapp"
+            target="_blank" rel="noreferrer noopener" data-network="whatsapp" data-location="footer"
+            aria-label="WhatsApp">
+            <a href="https://www.facebook.com/share/1EHV8sSbC9/" class="footer-social-link facebook" target="_blank"
+              rel="noreferrer noopener" data-network="facebook" data-location="footer" aria-label="Facebook">
+              <a href="https://www.instagram.com/ferreteria_alvarado.ni?utm_source=qr&igsh=b2poNHB6bXVrMWFj"
+                class="footer-social-link instagram" target="_blank" rel="noreferrer noopener" data-network="instagram"
+                data-location="footer" aria-label="Instagram">
+                <a href="#" class="footer-social-link tiktok" target="_blank" rel="noreferrer noopener"
+                  data-network="tiktok" data-location="footer" aria-label="TikTok">
+
         </div>
       </div>
     </div>
@@ -480,31 +514,29 @@
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M18 15l-6-6-6 6"/>
+      <path d="M18 15l-6-6-6 6" />
     </svg>
   </button>
 
   <!-- Botones flotantes de redes sociales -->
   <div class="social-float" aria-label="Redes sociales de Ferretería Alvarado">
-    <a href="https://wa.me/50577096403?text=Hola%20Ferreter%C3%ADa%20Alvarado,%20quiero%20consultar%20sobre%20sus%20productos" class="social-link whatsapp" target="_blank" rel="noreferrer noopener" aria-label="WhatsApp" data-network="whatsapp" data-location="flotante">
-      <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
-    </a>
-    <a href="https://www.facebook.com/share/1EHV8sSbC9/" class="social-link facebook" target="_blank" rel="noreferrer noopener" data-network="Facebook" data-location="flotante" aria-label="Facebook">
-      <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-    </a>
-    <a href="https://www.instagram.com/ferreteria_alvarado.ni?utm_source=qr&igsh=b2poNHB6bXVrMWFj" class="social-link instagram" target="_blank" rel="noreferrer noopener" data-network="Instagram" data-location="flotante" aria-label="Instagram">
-      <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-    </a>
-    <a href="#" class="social-link tiktok" target="_blank" rel="noreferrer noopener" data-network="TikTok" data-location="flotante" aria-label="TikTok">
-      <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
-    </a>
+    <!-- Botones flotantes -->
+    <a href="https://wa.me/50577096403?text=..." class="social-link whatsapp" target="_blank" rel="noreferrer noopener"
+      data-network="whatsapp" data-location="flotante" aria-label="WhatsApp">
+      <a href="https://www.facebook.com/share/1EHV8sSbC9/" class="social-link facebook" target="_blank"
+        rel="noreferrer noopener" data-network="facebook" data-location="flotante" aria-label="Facebook">
+        <a href="https://www.instagram.com/ferreteria_alvarado.ni?..." class="social-link instagram" target="_blank"
+          rel="noreferrer noopener" data-network="instagram" data-location="flotante" aria-label="Instagram">
+          <a href="#" class="social-link tiktok" target="_blank" rel="noreferrer noopener" data-network="tiktok"
+            data-location="flotante" aria-label="TikTok">
   </div>
 
   <script src="./scripts/script.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script>
     // Niquinohomo, Masaya, Nicaragua
-    const lat =11.90141623751404, lng =-86.10431360037359;
+    const lat = 11.90141623751404, lng = -86.10431360037359;
     const map = L.map('map', { scrollWheelZoom: false }).setView([lat, lng], 16);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -524,4 +556,5 @@
       .openPopup();
   </script>
 </body>
+
 </html>

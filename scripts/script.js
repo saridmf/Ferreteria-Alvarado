@@ -181,58 +181,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ///////////////////////////////////////////
 
-// Tracking de clicks en las cards del carrusel de galería
+// Tracking de clicks en las cards del carrusel de galería (promociones)
 document.addEventListener('DOMContentLoaded', () => {
   const galleryLinks = document.querySelectorAll('.gallery-card-link');
 
-  galleryLinks.forEach((link, index) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      const promoId = link.dataset.promoId || `promo-${index}`;
+  galleryLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      const promoId = link.dataset.promoId || 'unknown';
       const promoName = link.dataset.promoName || 'unknown';
 
       if (typeof gtag === 'function') {
         gtag('event', 'select_promotion', {
-          creative_name: promoName,
           promotion_id: promoId,
-          position: index,
-          destination: 'whatsapp'
+          promotion_name: promoName,
+          creative_name: promoName,
+          creative_slot: 'carrusel_galeria',
+          destination: 'whatsapp',
+          items: [
+            {
+              promotion_id: promoId,
+              promotion_name: promoName,
+              creative_name: promoName,
+              creative_slot: 'carrusel_galeria'
+            }
+          ]
         });
       }
-
-      // Espera para no perder el evento
-      setTimeout(() => {
-        window.open(link.href, '_blank');
-      }, 150);
+      // No hace falta preventDefault ni window.open: target="_blank"
+      // ya abre el enlace en pestaña nueva sin descartar el evento.
     });
   });
 });
-
-/* redes socisales*/
 
 // Tracking de clicks en botones de redes sociales (footer móvil + flotantes)
 document.addEventListener('DOMContentLoaded', () => {
   const socialLinks = document.querySelectorAll('.footer-social-link, .social-link');
 
   socialLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      const network = link.dataset.network || 'unknown';
-      const location = link.dataset.location || 'unknown';
+    link.addEventListener('click', () => {
+      const network = (link.dataset.network || 'unknown').toLowerCase();
+      const location = (link.dataset.location || 'unknown').toLowerCase();
 
       if (typeof gtag === 'function') {
         gtag('event', 'select_content', {
-          content_type: 'social',
+          content_type: 'social_icon',
           item_id: network,
           method: location
         });
       }
-
-      setTimeout(() => {
-        window.open(link.href, '_blank');
-      }, 150);
     });
   });
 });
