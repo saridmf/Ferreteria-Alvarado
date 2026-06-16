@@ -49,3 +49,23 @@ mobileLinks.forEach((link) => {
 });
 
 setReadMoreState(false);
+
+
+  function loadPage(page) {
+    document.getElementById("frame").src = page;
+  }
+
+  // estado activo del menú
+  document.querySelectorAll(".sidebar-menu a").forEach(link => {
+    link.addEventListener("click", function () {
+      document.querySelectorAll(".sidebar-menu a").forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+
+  const toggle = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+
+toggle.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+});

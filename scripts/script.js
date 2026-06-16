@@ -203,3 +203,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+/* redes socisales*/
+
+// Tracking de clicks en botones de redes sociales (footer móvil + flotantes)
+function trackSocialClick(network, location) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'social_click', {
+      event_category: 'Redes Sociales',
+      event_label: network,
+      click_location: location // 'footer' o 'floating'
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Botones del footer (móvil)
+  const footerSocialLinks = document.querySelectorAll('.footer-social-link');
+  footerSocialLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      const network = link.getAttribute('aria-label') || 'unknown';
+      trackSocialClick(network, 'footer');
+    });
+  });
+
+  // Botones flotantes
+  const floatingSocialLinks = document.querySelectorAll('.social-link');
+  floatingSocialLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      const network = link.getAttribute('aria-label') || 'unknown';
+      trackSocialClick(network, 'floating');
+    });
+  });
+});
