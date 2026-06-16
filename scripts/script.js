@@ -212,32 +212,27 @@ document.addEventListener('DOMContentLoaded', () => {
 /* redes socisales*/
 
 // Tracking de clicks en botones de redes sociales (footer móvil + flotantes)
-function trackSocialClick(network, location) {
-  if (typeof gtag === 'function') {
-    gtag('event', 'social_click', {
-      event_category: 'Redes Sociales',
-      event_label: network,
-      click_location: location // 'footer' o 'floating'
-    });
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  // Botones del footer (móvil)
-  const footerSocialLinks = document.querySelectorAll('.footer-social-link');
-  footerSocialLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      const network = link.getAttribute('aria-label') || 'unknown';
-      trackSocialClick(network, 'footer');
-    });
-  });
+  const socialLinks = document.querySelectorAll('.footer-social-link, .social-link');
 
-  // Botones flotantes
-  const floatingSocialLinks = document.querySelectorAll('.social-link');
-  floatingSocialLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      const network = link.getAttribute('aria-label') || 'unknown';
-      trackSocialClick(network, 'floating');
+  socialLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const network = link.dataset.network || 'unknown';
+      const location = link.dataset.location || 'unknown';
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'select_content', {
+          content_type: 'social',
+          item_id: network,
+          method: location
+        });
+      }
+
+      setTimeout(() => {
+        window.open(link.href, '_blank');
+      }, 150);
     });
   });
 });
