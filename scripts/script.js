@@ -182,24 +182,29 @@ document.addEventListener('DOMContentLoaded', () => {
 ///////////////////////////////////////////
 
 // Tracking de clicks en las cards del carrusel de galería
-function trackGalleryCardClick(cardIndex, cardCaption) {
-  if (typeof gtag === 'function') {
-    gtag('event', 'gallery_card_click', {
-      event_category: 'Galería',
-      event_label: cardCaption,
-      card_position: cardIndex,
-      destination: 'whatsapp'
-    });
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   const galleryLinks = document.querySelectorAll('.gallery-card-link');
 
   galleryLinks.forEach((link, index) => {
-    link.addEventListener('click', () => {
-      const caption = link.querySelector('.gallery-caption')?.textContent.trim() || `card-${index}`;
-      trackGalleryCardClick(index, caption);
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const promoId = link.dataset.promoId || `promo-${index}`;
+      const promoName = link.dataset.promoName || 'unknown';
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'select_promotion', {
+          creative_name: promoName,
+          promotion_id: promoId,
+          position: index,
+          destination: 'whatsapp'
+        });
+      }
+
+      // Espera para no perder el evento
+      setTimeout(() => {
+        window.open(link.href, '_blank');
+      }, 150);
     });
   });
 });
