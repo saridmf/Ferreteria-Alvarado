@@ -69,3 +69,25 @@ const sidebar = document.getElementById("sidebar");
 toggle.addEventListener("click", () => {
   sidebar.classList.toggle("open");
 });
+
+
+//carga de dashboard 
+
+
+  function loadPage(view) {
+            const frame = document.getElementById('frame');
+            const img = document.getElementById('panoramicoImg');
+            const links = document.querySelectorAll('.sidebar-menu a');
+ 
+            links.forEach((link) => {
+                link.classList.toggle('active', link.dataset.view === view);
+            });
+ 
+            if (view === 'panoramico') {
+                frame.hidden = true;
+                img.hidden = false;
+            } else {
+                img.hidden = true;
+                frame.hidden = false;
+            }
+        }

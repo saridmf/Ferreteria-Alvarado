@@ -32,10 +32,11 @@
         <aside class="sidebar" id="sidebar">
             <h3 class="sidebar-title">Panel</h3>
             <ul class="sidebar-menu">
-                <li><a href="./dashboard.html" class="active" onclick="loadPage('')">Informe panoramico</a></li>
-                <!-- <li><a href="#" onclick="loadPage('ventas.html')">Ventas</a></li>
-                <li><a href="#" onclick="loadPage('reportes.html')">Reportes</a></li> -->
+                <li><a href="#" class="active" data-view="informe" onclick="loadPage('informe'); return false;">Informe</a></li>
+                <li><a href="#" data-view="panoramico" onclick="loadPage('panoramico'); return false;">Informe panoramico</a></li>
+
             </ul>
+             <a href="../index.html" class="">Cerrar sesion</a>
         </aside>
 
         <!-- Contenido -->
@@ -44,10 +45,12 @@
                 src="https://datastudio.google.com/embed/reporting/789ed0cd-b2d2-45e2-969d-f712fde07af6/page/NxI1F"
                 frameborder="0" allowfullscreen>
             </iframe>
+
+            <img id="panoramicoImg" src="../Assets/informe panoramico.png" alt="Informe panorámico" hidden>
         </section>
     </main>
-    </main>
     <script src="../scripts/readmore.js"></script>
+
 </body>
 
 </html>
